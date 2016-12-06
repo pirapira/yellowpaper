@@ -177,6 +177,18 @@ I define a number of useful functions throughout. One of the more common is $\el
 \ell(\mathbf{x}) \equiv \mathbf{x}[\lVert \mathbf{x} \rVert - 1]
 \end{equation}
 
+When a definition has multiple cases, the cases above have precedence over the cases below.
+For example, in the equation below, when both conditions $a$ and $b$ hold, $x$ below is defined to be $y$:
+\begin{equation} \nonumber
+x \equiv \begin{cases}
+y & \text{if condition}\, a\,\text{holds}\\
+z & \text{if condition}\, b\,\text{holds}\\
+w & \text{otherwise}
+\end{cases}
+\end{equation}
+
+
+
 \section{Blocks, State and Transactions} \label{ch:bst}
 
 Having introduced the basic concepts behind Ethereum, we will discuss the meaning of a transaction, a block and the state in more detail.
